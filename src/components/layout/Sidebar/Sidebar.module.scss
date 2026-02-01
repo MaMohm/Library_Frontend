@@ -1,0 +1,117 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: var(--color-bg-secondary);
+    border-right: 1px solid rgba($color-primary-900, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+    transform: translateX(-100%);
+    @include transition(transform);
+
+    &.open {
+        transform: translateX(0);
+    }
+
+    @include desktop {
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.02);
+    }
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+    opacity: 0;
+    pointer-events: none;
+    @include transition(opacity);
+
+    &.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.header {
+    padding: $spacing-6;
+    @include flex-center;
+    justify-content: flex-start;
+    gap: $spacing-3;
+    color: $color-primary-900;
+}
+
+.title {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.logo {
+    color: $color-primary-500;
+}
+
+.nav {
+    flex: 1;
+    padding: $spacing-4;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-2;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: $spacing-3;
+    padding: $spacing-3 $spacing-4;
+    border-radius: $radius-md;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    @include transition;
+
+    &:hover {
+        background-color: $color-primary-50;
+        color: $color-primary-900;
+    }
+
+    &.active {
+        background-color: $color-primary-100;
+        color: $color-primary-900;
+        font-weight: 600;
+    }
+}
+
+.footer {
+    padding: $spacing-4;
+    border-top: 1px solid rgba($color-primary-900, 0.05);
+}
+
+.logoutBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: $spacing-3;
+    padding: $spacing-3 $spacing-4;
+    border: none;
+    background: transparent;
+    color: #ef4444;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: $radius-md;
+    @include transition;
+
+    &:hover {
+        background-color: rgba(239, 68, 68, 0.1);
+    }
+}

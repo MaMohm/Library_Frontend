@@ -1,0 +1,118 @@
+@use 'sass:color';
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.button {
+    @include flex-center;
+    gap: $spacing-2;
+    border-radius: $radius-md;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    @include transition;
+
+    &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    /* Variants */
+    &.primary {
+        background-color: $color-primary-500;
+        color: $color-primary-900;
+
+        &:hover:not(:disabled) {
+            background-color: color.adjust($color-primary-500, $lightness: -10%);
+        }
+    }
+
+    &.secondary {
+        background-color: $color-primary-100;
+        color: $color-primary-900;
+
+        &:hover:not(:disabled) {
+            background-color: color.adjust($color-primary-100, $lightness: -5%);
+        }
+    }
+
+    &.outline {
+        background-color: transparent;
+        border: 1px solid $color-primary-500;
+        color: $color-primary-500;
+
+        &:hover:not(:disabled) {
+            background-color: $color-primary-50;
+        }
+    }
+
+    &.ghost {
+        background-color: transparent;
+        color: inherit;
+        padding: $spacing-1; // Minimal padding for icons
+
+        &:hover:not(:disabled) {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    /* Sizes */
+    &.sm {
+        padding: $spacing-1 $spacing-3;
+        font-size: 0.875rem;
+    }
+
+    &.md {
+        padding: $spacing-2 $spacing-4;
+        font-size: 1rem;
+    }
+
+    &.lg {
+        padding: $spacing-3 $spacing-6;
+        font-size: 1.125rem;
+    }
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+:global([data-theme='dark']) {
+    .button.outline {
+        border-color: $color-neutral-400;
+        color: $color-neutral-200;
+
+        &:hover:not(:disabled) {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: $color-neutral-100;
+            color: $color-neutral-50;
+        }
+    }
+
+    // Ensure primary text is legible if primary color is dark, 
+    // but usually primary is bright. If needed:
+    // .button.primary { color: ... }
+
+    .button.ghost {
+        color: $color-neutral-300;
+
+        &:hover:not(:disabled) {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: $color-neutral-100;
+        }
+    }
+}

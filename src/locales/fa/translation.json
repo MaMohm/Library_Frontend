@@ -1,0 +1,92 @@
+{
+    "header": {
+        "searchPlaceholder": "جستجوی کتاب‌ها، نویسندگان...",
+        "login": "ورود",
+        "logout": "خروج"
+    },
+    "nav": {
+        "home": "خانه",
+        "categories": "دسته‌بندی‌ها",
+        "about": "درباره ما",
+        "myBooks": "کتاب‌های من",
+        "recycleBin": "سطل بازیافت",
+        "profile": "پروفایل"
+    },
+    "home": {
+        "welcomeBack": "خوش آمدید، {{name}}!",
+        "subtitle": "کتاب مورد علاقه بعدی خود را از مجموعه ما کشف کنید",
+        "admin": "مدیر",
+        "reader": "خواننده",
+        "favorites": "علاقه‌مندی‌ها",
+        "totalBooks": "مجموع کتاب‌ها",
+        "recentAdditions": "افزوده‌های اخیر",
+        "bin": "سطل",
+        "manageTrash": "مدیریت سطل",
+        "yourRole": "نقش شما"
+    },
+    "profile": {
+        "title": "پروفایل من",
+        "reading": "در حال خواندن",
+        "favorites": "علاقه‌مندی‌ها",
+        "logout": "خروج",
+        "editProfile": "ویرایش پروفایل",
+        "myReviews": "نقدهای من",
+        "noReviews": "هیچ نقدی برای این دسته یافت نشد",
+        "all": "همه",
+        "fiction": "داستان",
+        "science": "علوم",
+        "history": "تاریخ",
+        "technology": "فناوری",
+        "business": "تجارت"
+    },
+    "bookDetails": {
+        "published": "منتشر شده",
+        "isbn": "شابک",
+        "status": "وضعیت",
+        "description": "توضیحات",
+        "noDescription": "توضیحی موجود نیست.",
+        "haveYouRead": "آیا این کتاب را خوانده‌اید؟",
+        "writeReview": "نوشتن نقد",
+        "read": "خوانده شده",
+        "reading": "در حال خواندن",
+        "wantToRead": "می‌خواهم بخوانم",
+        "communityRating": "امتیاز جامعه",
+        "startReading": "شروع خواندن",
+        "viewDetails": "مشاهده جزئیات",
+        "loginRequired": "ورود الزامی است",
+        "loginMessage": "برای تعامل با کتاب‌ها، پیگیری خواندن یا گذاشتن نقد، باید وارد حساب کاربری خود شوید.",
+        "loginBtn": "ورود با حساب کاربری",
+        "continueBrowsing": "ادامه مرور",
+        "deleteBook": "حذف کتاب",
+        "deleteConfirmation": "آیا مطمئن هستید که می‌خواهید این کتاب را حذف کنید؟ این عمل قابل بازگشت نیست.",
+        "cancel": "لغو",
+        "delete": "حذف",
+        "submit": "ارسال"
+    },
+    "categories": {
+        "title": "دسته‌بندی‌ها",
+        "subtitle": "مرور کتاب‌ها بر اساس استفاده",
+        "loading": "در حال بارگذاری دسته‌بندی‌ها...",
+        "noCategories": "هیچ دسته‌بندی یافت نشد.",
+        "books": "کتاب‌ها",
+        "descriptions": {
+            "science": "کاوش در جهان",
+            "technology": "آینده اینجاست",
+            "history": "رویدادهای گذشته",
+            "business": "دنیای شرکتی",
+            "philosophy": "افکار عمیق",
+            "psychology": "افکار عمیق",
+            "fantasy": "قلمروهای جادویی",
+            "romance": "داستان‌های عاشقانه",
+            "horror": "داستان‌های ترسناک",
+            "thriller": "داستان‌های ترسناک",
+            "art": "آثار خلاقانه",
+            "design": "آثار خلاقانه",
+            "fiction": "دنیاهای خیالی",
+            "travel": "دور دنیا",
+            "cooking": "لذت‌های آشپزی",
+            "food": "لذت‌های آشپزی",
+            "general": "دسته عمومی"
+        }
+    }
+}

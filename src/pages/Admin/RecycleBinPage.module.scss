@@ -1,0 +1,154 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.container {
+    padding: $spacing-8;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.header {
+    margin-bottom: $spacing-8;
+
+    h1 {
+        display: flex;
+        align-items: center;
+        gap: $spacing-3;
+        font-size: 2rem;
+        color: var(--color-text-primary);
+        margin-bottom: $spacing-2;
+
+        svg {
+            color: $color-primary-600;
+        }
+    }
+
+    p {
+        color: var(--color-text-secondary);
+    }
+}
+
+.loading {
+    padding: 3rem;
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 1.2rem;
+}
+
+.emptyState {
+    @include flex-center;
+    flex-direction: column;
+    padding: 3rem;
+    background: #f9fafb;
+    border-radius: $radius-lg;
+    gap: $spacing-4;
+    color: $color-neutral-400;
+
+    h3 {
+        color: var(--color-text-secondary);
+        font-size: 1.5rem;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: $spacing-4;
+}
+
+.card {
+    background: white;
+    border: 1px solid $color-neutral-200;
+    border-radius: $radius-md;
+    padding: $spacing-4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-color: $color-primary-200;
+    }
+
+    .cardContent {
+        flex: 1;
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--color-text-primary);
+            margin-bottom: 4px;
+        }
+
+        .author {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            margin-bottom: $spacing-2;
+        }
+
+        .meta {
+            font-size: 0.75rem;
+            color: var(--color-text-secondary);
+            display: flex;
+            gap: $spacing-3;
+        }
+    }
+
+    .actions {
+        display: flex;
+        gap: $spacing-2;
+        margin-left: $spacing-4;
+
+        button {
+            width: 36px;
+            height: 36px;
+            border-radius: $radius-full;
+            border: 1px solid transparent;
+            @include flex-center;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &.restoreBtn {
+                background: #ecfccb; // Lime-100
+                color: #65a30d; // Lime-600
+
+                &:hover {
+                    background: #d9f99d;
+                    transform: scale(1.1);
+                }
+            }
+
+            &.deleteBtn {
+                background: #fee2e2; // Red-100
+                color: #dc2626; // Red-600
+
+                &:hover {
+                    background: #fecaca;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}

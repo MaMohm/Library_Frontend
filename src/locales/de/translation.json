@@ -1,0 +1,92 @@
+{
+    "header": {
+        "searchPlaceholder": "Bücher, Autoren suchen...",
+        "login": "Anmelden",
+        "logout": "Abmelden"
+    },
+    "nav": {
+        "home": "Startseite",
+        "categories": "Kategorien",
+        "about": "Über uns",
+        "myBooks": "Meine Bücher",
+        "recycleBin": "Papierkorb",
+        "profile": "Profil"
+    },
+    "home": {
+        "welcomeBack": "Willkommen zurück, {{name}}!",
+        "subtitle": "Entdecken Sie Ihr nächstes Lieblingsbuch aus unserer Sammlung",
+        "admin": "Administrator",
+        "reader": "Leser",
+        "favorites": "Favoriten",
+        "totalBooks": "Gesamtzahl der Bücher",
+        "recentAdditions": "Neueste Ergänzungen",
+        "bin": "Papierkorb",
+        "manageTrash": "Papierkorb verwalten",
+        "yourRole": "Ihre Rolle"
+    },
+    "profile": {
+        "title": "Mein Profil",
+        "reading": "Lesen",
+        "favorites": "Favoriten",
+        "logout": "Abmelden",
+        "editProfile": "Profil bearbeiten",
+        "myReviews": "Meine Bewertungen",
+        "noReviews": "Keine Bewertungen für diese Kategorie gefunden",
+        "all": "Alle",
+        "fiction": "Fiktion",
+        "science": "Wissenschaft",
+        "history": "Geschichte",
+        "technology": "Technologie",
+        "business": "Geschäft"
+    },
+    "bookDetails": {
+        "published": "Veröffentlicht",
+        "isbn": "ISBN",
+        "status": "Status",
+        "description": "Beschreibung",
+        "noDescription": "Keine Beschreibung verfügbar.",
+        "haveYouRead": "Haben Sie dieses Buch gelesen?",
+        "writeReview": "Bewertung schreiben",
+        "read": "Gelesen",
+        "reading": "Lesen",
+        "wantToRead": "Möchte lesen",
+        "communityRating": "Community-Bewertung",
+        "startReading": "Lesen beginnen",
+        "viewDetails": "Details anzeigen",
+        "loginRequired": "Anmeldung erforderlich",
+        "loginMessage": "Um mit Büchern zu interagieren, das Lesen zu verfolgen oder Bewertungen zu hinterlassen, müssen Sie angemeldet sein.",
+        "loginBtn": "Mit Konto anmelden",
+        "continueBrowsing": "Weiter stöbern",
+        "deleteBook": "Buch löschen",
+        "deleteConfirmation": "Sind Sie sicher, dass Sie dieses Buch löschen möchten? Dies kann nicht rückgängig gemacht werden.",
+        "cancel": "Abbrechen",
+        "delete": "Löschen",
+        "submit": "Absenden"
+    },
+    "categories": {
+        "title": "Kategorien",
+        "subtitle": "Bücher nach Verwendung durchsuchen",
+        "loading": "Kategorien werden geladen...",
+        "noCategories": "Keine Kategorien gefunden.",
+        "books": "Bücher",
+        "descriptions": {
+            "science": "Das Universum erkunden",
+            "technology": "Die Zukunft ist hier",
+            "history": "Vergangene Ereignisse",
+            "business": "Geschäftswelt",
+            "philosophy": "Tiefe Gedanken",
+            "psychology": "Tiefe Gedanken",
+            "fantasy": "Magische Reiche",
+            "romance": "Liebesgeschichten",
+            "horror": "Gruselgeschichten",
+            "thriller": "Gruselgeschichten",
+            "art": "Kreative Werke",
+            "design": "Kreative Werke",
+            "fiction": "Imaginäre Welten",
+            "travel": "Rund um die Welt",
+            "cooking": "Kulinarische Genüsse",
+            "food": "Kulinarische Genüsse",
+            "general": "Allgemeine Kategorie"
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    h1 {
+        font-size: 1.8rem;
+        color: var(--color-text-primary);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+.tableContainer {
+    background: var(--color-bg-secondary);
+    border-radius: $radius-lg;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    @include transition;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+        background-color: rgba($color-primary-500, 0.1);
+        color: var(--color-text-primary);
+        font-weight: 600;
+        text-align: left;
+        padding: 1rem;
+        border-bottom: 1px solid rgba($color-neutral-300, 0.2);
+    }
+
+    td {
+        padding: 1rem;
+        border-bottom: 1px solid rgba($color-neutral-300, 0.1);
+        color: var(--color-text-secondary);
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+    tr:hover {
+        background-color: rgba($color-primary-500, 0.05);
+    }
+}
+
+.roleSelect {
+    padding: 0.25rem 0.5rem;
+    border-radius: $radius-sm;
+    border: 1px solid rgba($color-neutral-400, 0.3);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        border-color: $color-primary-500;
+        box-shadow: 0 0 0 2px rgba($color-primary-500, 0.2);
+    }
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &.admin {
+        background-color: #fee2e2;
+        color: #ef4444;
+    }
+
+    &.librarian {
+        background-color: #fef3c7;
+        color: #f59e0b;
+    }
+
+    &.member {
+        background-color: #dbeafe;
+        color: #3b82f6;
+    }
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    color: var(--color-text-secondary);
+}
+
+.empty {
+    text-align: center;
+    padding: 3rem;
+    color: var(--color-text-secondary);
+}

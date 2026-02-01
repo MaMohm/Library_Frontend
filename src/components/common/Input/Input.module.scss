@@ -1,0 +1,76 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-1;
+    width: 100%;
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.leftIcon {
+    position: absolute;
+    left: $spacing-3;
+    display: flex;
+    align-items: center;
+    color: var(--color-text-secondary);
+    pointer-events: none;
+    z-index: 1;
+
+    // RTL support
+    html[dir="rtl"] & {
+        left: auto;
+        right: $spacing-3;
+    }
+}
+
+.input {
+    width: 100%;
+    padding: $spacing-2 $spacing-3;
+    border-radius: $radius-md;
+    border: 1px solid rgba($color-primary-900, 0.2);
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    @include transition;
+
+    &.hasLeftIcon {
+        padding-left: 2.75rem;
+
+        html[dir="rtl"] & {
+            padding-left: $spacing-3;
+            padding-right: 2.75rem;
+        }
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $color-primary-500;
+        box-shadow: 0 0 0 2px rgba($color-primary-500, 0.2);
+    }
+
+    &.error {
+        border-color: #ef4444;
+
+        &:focus {
+            box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+        }
+    }
+}
+
+.errorMessage {
+    font-size: 0.75rem;
+    color: #ef4444;
+}

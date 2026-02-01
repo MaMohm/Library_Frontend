@@ -1,0 +1,166 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.container {
+    position: relative;
+    z-index: 100;
+}
+
+.triggerBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--color-text-secondary);
+    @include flex-center;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover,
+    &.active {
+        background: $color-neutral-100;
+        color: $color-primary-600;
+    }
+
+    // Mobile adjustments
+    @media (max-width: 768px) {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    width: 240px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: $radius-lg;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06),
+        0 0 0 1px rgba(0, 0, 0, 0.05); // Subtle border
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    animation: slideDown 0.2s ease-out;
+    max-height: 400px;
+    overflow-y: auto; // Handle many languages if height constrained
+
+    // Scrollbar styling
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $color-neutral-200;
+        border-radius: 4px;
+    }
+}
+
+.languageItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: $radius-md;
+    transition: all 0.15s;
+    font-family: inherit;
+
+    &:hover {
+        background: $color-primary-50;
+    }
+
+    &.selected {
+        background: $color-primary-100;
+
+        .label {
+            color: $color-primary-700;
+            font-weight: 600;
+        }
+
+        .check {
+            opacity: 1;
+        }
+    }
+}
+
+.flag {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.label {
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.check {
+    color: $color-primary-600;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Dark mode support
+:global([data-theme='dark']) {
+    .triggerBtn {
+        color: $color-neutral-400;
+
+        &:hover,
+        &.active {
+            background: $color-neutral-800;
+            color: $color-primary-400;
+        }
+    }
+
+    .dropdown {
+        background: rgba(30, 41, 59, 0.95); // Slate-800
+        border-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .languageItem {
+        .label {
+            color: $color-neutral-300;
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        &.selected {
+            background: rgba($color-primary-500, 0.15);
+
+            .label {
+                color: $color-primary-300;
+            }
+        }
+    }
+}

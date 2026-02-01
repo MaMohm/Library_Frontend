@@ -1,0 +1,92 @@
+{
+    "header": {
+        "searchPlaceholder": "Pesquisar livros, autores...",
+        "login": "Entrar",
+        "logout": "Sair"
+    },
+    "nav": {
+        "home": "Início",
+        "categories": "Categorias",
+        "about": "Sobre",
+        "myBooks": "Meus Livros",
+        "recycleBin": "Lixeira",
+        "profile": "Perfil"
+    },
+    "home": {
+        "welcomeBack": "Bem-vindo de volta, {{name}}!",
+        "subtitle": "Descubra seu próximo livro favorito da nossa coleção",
+        "admin": "Administrador",
+        "reader": "Leitor",
+        "favorites": "Favoritos",
+        "totalBooks": "Total de Livros",
+        "recentAdditions": "Adições Recentes",
+        "bin": "Lixeira",
+        "manageTrash": "Gerenciar Lixeira",
+        "yourRole": "Seu Papel"
+    },
+    "profile": {
+        "title": "Meu Perfil",
+        "reading": "Lendo",
+        "favorites": "Favoritos",
+        "logout": "Sair",
+        "editProfile": "Editar Perfil",
+        "myReviews": "Minhas Avaliações",
+        "noReviews": "Nenhuma avaliação encontrada para esta categoria",
+        "all": "Todos",
+        "fiction": "Ficção",
+        "science": "Ciência",
+        "history": "História",
+        "technology": "Tecnologia",
+        "business": "Negócios"
+    },
+    "bookDetails": {
+        "published": "Publicado",
+        "isbn": "ISBN",
+        "status": "Status",
+        "description": "Descrição",
+        "noDescription": "Nenhuma descrição disponível.",
+        "haveYouRead": "Você leu este livro?",
+        "writeReview": "Escrever uma Avaliação",
+        "read": "Lido",
+        "reading": "Lendo",
+        "wantToRead": "Quero Ler",
+        "communityRating": "Avaliação da Comunidade",
+        "startReading": "Começar a Ler",
+        "viewDetails": "Ver Detalhes",
+        "loginRequired": "Login Necessário",
+        "loginMessage": "Para interagir com livros, acompanhar a leitura ou deixar avaliações, você precisa estar conectado.",
+        "loginBtn": "Entrar com Conta",
+        "continueBrowsing": "Continuar Navegando",
+        "deleteBook": "Excluir Livro",
+        "deleteConfirmation": "Tem certeza de que deseja excluir este livro? Isso não pode ser desfeito.",
+        "cancel": "Cancelar",
+        "delete": "Excluir",
+        "submit": "Enviar"
+    },
+    "categories": {
+        "title": "Categorias",
+        "subtitle": "Navegar livros por uso",
+        "loading": "Carregando categorias...",
+        "noCategories": "Nenhuma categoria encontrada.",
+        "books": "Livros",
+        "descriptions": {
+            "science": "Explorar o universo",
+            "technology": "O futuro está aqui",
+            "history": "Eventos passados",
+            "business": "Mundo corporativo",
+            "philosophy": "Pensamentos profundos",
+            "psychology": "Pensamentos profundos",
+            "fantasy": "Reinos mágicos",
+            "romance": "Histórias de amor",
+            "horror": "Contos assustadores",
+            "thriller": "Contos assustadores",
+            "art": "Obras criativas",
+            "design": "Obras criativas",
+            "fiction": "Mundos imaginários",
+            "travel": "Ao redor do mundo",
+            "cooking": "Delícias culinárias",
+            "food": "Delícias culinárias",
+            "general": "Categoria geral"
+        }
+    }
+}

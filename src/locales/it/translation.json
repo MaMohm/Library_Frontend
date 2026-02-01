@@ -1,0 +1,92 @@
+{
+    "header": {
+        "searchPlaceholder": "Cerca libri, autori...",
+        "login": "Accedi",
+        "logout": "Esci"
+    },
+    "nav": {
+        "home": "Home",
+        "categories": "Categorie",
+        "about": "Chi siamo",
+        "myBooks": "I Miei Libri",
+        "recycleBin": "Cestino",
+        "profile": "Profilo"
+    },
+    "home": {
+        "welcomeBack": "Bentornato, {{name}}!",
+        "subtitle": "Scopri il tuo prossimo libro preferito dalla nostra collezione",
+        "admin": "Amministratore",
+        "reader": "Lettore",
+        "favorites": "Preferiti",
+        "totalBooks": "Totale Libri",
+        "recentAdditions": "Aggiunte Recenti",
+        "bin": "Cestino",
+        "manageTrash": "Gestisci Cestino",
+        "yourRole": "Il Tuo Ruolo"
+    },
+    "profile": {
+        "title": "Il Mio Profilo",
+        "reading": "In Lettura",
+        "favorites": "Preferiti",
+        "logout": "Esci",
+        "editProfile": "Modifica Profilo",
+        "myReviews": "Le Mie Recensioni",
+        "noReviews": "Nessuna recensione trovata per questa categoria",
+        "all": "Tutti",
+        "fiction": "Narrativa",
+        "science": "Scienza",
+        "history": "Storia",
+        "technology": "Tecnologia",
+        "business": "Business"
+    },
+    "bookDetails": {
+        "published": "Pubblicato",
+        "isbn": "ISBN",
+        "status": "Stato",
+        "description": "Descrizione",
+        "noDescription": "Nessuna descrizione disponibile.",
+        "haveYouRead": "Hai letto questo libro?",
+        "writeReview": "Scrivi una Recensione",
+        "read": "Letto",
+        "reading": "In Lettura",
+        "wantToRead": "Da Leggere",
+        "communityRating": "Valutazione della Comunità",
+        "startReading": "Inizia a Leggere",
+        "viewDetails": "Visualizza Dettagli",
+        "loginRequired": "Accesso Richiesto",
+        "loginMessage": "Per interagire con i libri, tracciare la lettura o lasciare recensioni, devi essere connesso.",
+        "loginBtn": "Accedi con Account",
+        "continueBrowsing": "Continua a Navigare",
+        "deleteBook": "Elimina Libro",
+        "deleteConfirmation": "Sei sicuro di voler eliminare questo libro? Questa azione non può essere annullata.",
+        "cancel": "Annulla",
+        "delete": "Elimina",
+        "submit": "Invia"
+    },
+    "categories": {
+        "title": "Categorie",
+        "subtitle": "Sfoglia i libri per utilizzo",
+        "loading": "Caricamento categorie...",
+        "noCategories": "Nessuna categoria trovata.",
+        "books": "Libri",
+        "descriptions": {
+            "science": "Esplora l'universo",
+            "technology": "Il futuro è qui",
+            "history": "Eventi passati",
+            "business": "Mondo aziendale",
+            "philosophy": "Pensieri profondi",
+            "psychology": "Pensieri profondi",
+            "fantasy": "Regni magici",
+            "romance": "Storie d'amore",
+            "horror": "Racconti spaventosi",
+            "thriller": "Racconti spaventosi",
+            "art": "Opere creative",
+            "design": "Opere creative",
+            "fiction": "Mondi immaginari",
+            "travel": "In giro per il mondo",
+            "cooking": "Delizie culinarie",
+            "food": "Delizie culinarie",
+            "general": "Categoria generale"
+        }
+    }
+}

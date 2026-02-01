@@ -1,0 +1,92 @@
+{
+    "header": {
+        "searchPlaceholder": "Zoek boeken, auteurs...",
+        "login": "Inloggen",
+        "logout": "Uitloggen"
+    },
+    "nav": {
+        "home": "Home",
+        "categories": "Categorieën",
+        "about": "Over ons",
+        "myBooks": "Mijn Boeken",
+        "recycleBin": "Prullenbak",
+        "profile": "Profiel"
+    },
+    "home": {
+        "welcomeBack": "Welkom terug, {{name}}!",
+        "subtitle": "Ontdek je volgende favoriete boek uit onze collectie",
+        "admin": "Beheerder",
+        "reader": "Lezer",
+        "favorites": "Favorieten",
+        "totalBooks": "Totaal Boeken",
+        "recentAdditions": "Recente Toevoegingen",
+        "bin": "Prullenbak",
+        "manageTrash": "Prullenbak Beheren",
+        "yourRole": "Jouw Rol"
+    },
+    "profile": {
+        "title": "Mijn Profiel",
+        "reading": "Aan het Lezen",
+        "favorites": "Favorieten",
+        "logout": "Uitloggen",
+        "editProfile": "Profiel Bewerken",
+        "myReviews": "Mijn Recensies",
+        "noReviews": "Geen recensies gevonden voor deze categorie",
+        "all": "Alle",
+        "fiction": "Fictie",
+        "science": "Wetenschap",
+        "history": "Geschiedenis",
+        "technology": "Technologie",
+        "business": "Zakelijk"
+    },
+    "bookDetails": {
+        "published": "Gepubliceerd",
+        "isbn": "ISBN",
+        "status": "Status",
+        "description": "Beschrijving",
+        "noDescription": "Geen beschrijving beschikbaar.",
+        "haveYouRead": "Heb je dit boek gelezen?",
+        "writeReview": "Schrijf een Recensie",
+        "read": "Gelezen",
+        "reading": "Aan het Lezen",
+        "wantToRead": "Wil Lezen",
+        "communityRating": "Gemeenschapsbeoordeling",
+        "startReading": "Begin met Lezen",
+        "viewDetails": "Details Bekijken",
+        "loginRequired": "Inloggen Vereist",
+        "loginMessage": "Om te communiceren met boeken, lezen bij te houden of recensies achter te laten, moet je ingelogd zijn.",
+        "loginBtn": "Inloggen met Account",
+        "continueBrowsing": "Doorgaan met Browsen",
+        "deleteBook": "Boek Verwijderen",
+        "deleteConfirmation": "Weet je zeker dat je dit boek wilt verwijderen? Dit kan niet ongedaan worden gemaakt.",
+        "cancel": "Annuleren",
+        "delete": "Verwijderen",
+        "submit": "Verzenden"
+    },
+    "categories": {
+        "title": "Categorieën",
+        "subtitle": "Blader door boeken op gebruik",
+        "loading": "Categorieën laden...",
+        "noCategories": "Geen categorieën gevonden.",
+        "books": "Boeken",
+        "descriptions": {
+            "science": "Verken het universum",
+            "technology": "De toekomst is hier",
+            "history": "Gebeurtenissen uit het verleden",
+            "business": "Zakelijke wereld",
+            "philosophy": "Diepe gedachten",
+            "psychology": "Diepe gedachten",
+            "fantasy": "Magische rijken",
+            "romance": "Liefdesverhalen",
+            "horror": "Enge verhalen",
+            "thriller": "Enge verhalen",
+            "art": "Creatieve werken",
+            "design": "Creatieve werken",
+            "fiction": "Denkbeeldige werelden",
+            "travel": "Rond de wereld",
+            "cooking": "Culinaire genoegens",
+            "food": "Culinaire genoegens",
+            "general": "Algemene categorie"
+        }
+    }
+}

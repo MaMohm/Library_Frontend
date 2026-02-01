@@ -1,0 +1,92 @@
+{
+    "header": {
+        "searchPlaceholder": "Buscar libros, autores...",
+        "login": "Iniciar sesión",
+        "logout": "Cerrar sesión"
+    },
+    "nav": {
+        "home": "Inicio",
+        "categories": "Categorías",
+        "about": "Acerca de",
+        "myBooks": "Mis Libros",
+        "recycleBin": "Papelera",
+        "profile": "Perfil"
+    },
+    "home": {
+        "welcomeBack": "¡Bienvenido de nuevo, {{name}}!",
+        "subtitle": "Descubre tu próximo libro favorito de nuestra colección",
+        "admin": "Administrador",
+        "reader": "Lector",
+        "favorites": "Favoritos",
+        "totalBooks": "Total de Libros",
+        "recentAdditions": "Adiciones Recientes",
+        "bin": "Papelera",
+        "manageTrash": "Gestionar Papelera",
+        "yourRole": "Tu Rol"
+    },
+    "profile": {
+        "title": "Mi Perfil",
+        "reading": "Leyendo",
+        "favorites": "Favoritos",
+        "logout": "Cerrar sesión",
+        "editProfile": "Editar Perfil",
+        "myReviews": "Mis Reseñas",
+        "noReviews": "No se encontraron reseñas para esta categoría",
+        "all": "Todos",
+        "fiction": "Ficción",
+        "science": "Ciencia",
+        "history": "Historia",
+        "technology": "Tecnología",
+        "business": "Negocios"
+    },
+    "bookDetails": {
+        "published": "Publicado",
+        "isbn": "ISBN",
+        "status": "Estado",
+        "description": "Descripción",
+        "noDescription": "No hay descripción disponible.",
+        "haveYouRead": "¿Has leído este libro?",
+        "writeReview": "Escribir una Reseña",
+        "read": "Leído",
+        "reading": "Leyendo",
+        "wantToRead": "Quiero Leer",
+        "communityRating": "Calificación de la Comunidad",
+        "startReading": "Comenzar a Leer",
+        "viewDetails": "Ver Detalles",
+        "loginRequired": "Inicio de Sesión Requerido",
+        "loginMessage": "Para interactuar con los libros, seguir la lectura o dejar reseñas, debes iniciar sesión.",
+        "loginBtn": "Iniciar Sesión",
+        "continueBrowsing": "Continuar Navegando",
+        "deleteBook": "Eliminar Libro",
+        "deleteConfirmation": "¿Estás seguro de que quieres eliminar este libro? Esto no se puede deshacer.",
+        "cancel": "Cancelar",
+        "delete": "Eliminar",
+        "submit": "Enviar"
+    },
+    "categories": {
+        "title": "Categorías",
+        "subtitle": "Explorar libros por uso",
+        "loading": "Cargando categorías...",
+        "noCategories": "No se encontraron categorías.",
+        "books": "Libros",
+        "descriptions": {
+            "science": "Explorar el universo",
+            "technology": "El futuro está aquí",
+            "history": "Eventos pasados",
+            "business": "Mundo corporativo",
+            "philosophy": "Pensamientos profundos",
+            "psychology": "Pensamientos profundos",
+            "fantasy": "Reinos mágicos",
+            "romance": "Historias de amor",
+            "horror": "Cuentos de terror",
+            "thriller": "Cuentos de terror",
+            "art": "Obras creativas",
+            "design": "Obras creativas",
+            "fiction": "Mundos imaginarios",
+            "travel": "Alrededor del mundo",
+            "cooking": "Delicias culinarias",
+            "food": "Delicias culinarias",
+            "general": "Categoría general"
+        }
+    }
+}

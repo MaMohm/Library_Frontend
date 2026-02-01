@@ -1,0 +1,62 @@
+/* Colors */
+$color-primary-50: #fffaf0;
+$color-primary-100: #ffefd4;
+$color-primary-200: #ffd89e;
+$color-primary-300: #ffc76d;
+$color-primary-400: #e8b84d;
+$color-primary-500: #dec973;
+$color-primary-600: #c9a43d;
+$color-primary-700: #a88832;
+$color-primary-800: #8a6f28;
+$color-primary-900: #59331b;
+
+/* Neutral Colors */
+$color-neutral-50: #fafafa;
+$color-neutral-100: #f5f5f5;
+$color-neutral-200: #e5e5e5;
+$color-neutral-300: #d4d4d4;
+$color-neutral-400: #a3a3a3;
+$color-neutral-500: #737373;
+$color-neutral-600: #525252;
+$color-neutral-700: #404040;
+$color-neutral-800: #262626;
+$color-neutral-900: #171717;
+
+$color-bg-light: #ffefd4;
+$color-bg-light-sec: #ffffff;
+$color-text-light: #21060a;
+$color-text-light-secondary: #525252;
+
+// Softer, warmer dark mode colors
+$color-bg-dark: #1c1917;           // Warmer dark (stone-900)
+$color-bg-dark-sec: #292524;       // Softer card background (stone-800)
+$color-bg-dark-card: #44403c;      // Card hover/elevated (stone-700)
+$color-text-dark: #fef3e2;         // Warm cream white
+$color-text-dark-secondary: #d6d3d1; // Stone-300 for better readability
+
+// Dark mode input/table colors
+$color-input-dark-bg: #292524;
+$color-input-dark-border: #44403c;
+$color-table-dark-header: #1c1917;
+$color-table-dark-row-hover: rgba(68, 64, 60, 0.5);
+
+/* Spacing */
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 0.75rem;
+$spacing-4: 1rem;
+$spacing-6: 1.5rem;
+$spacing-8: 2rem;
+$spacing-9: 2.5rem;
+
+
+/* Radius */
+$radius-sm: 0.25rem;
+$radius-md: 0.5rem;
+$radius-lg: 0.75rem;
+$radius-full: 9999px;
+
+/* Breakpoints */
+$mobile: 640px;
+$tablet: 768px;
+$desktop: 1024px;

@@ -1,0 +1,567 @@
+@use '../../styles/variables' as *;
+
+.profile {
+    padding: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+        color: var(--color-text-primary);
+    }
+}
+
+.profileCard {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, $color-primary-100 0%, $color-primary-200 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-primary-600;
+}
+
+.info {
+    flex: 1;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-secondary);
+
+    svg {
+        color: var(--color-text-secondary);
+    }
+}
+
+.roleBadge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.adminBadge {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.librarianBadge {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.memberBadge {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.statsRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.statCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+}
+
+.iconRed {
+    color: #ef4444;
+}
+
+.iconBlue {
+    color: #3b82f6;
+}
+
+.statValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    color: var(--color-text-primary);
+}
+
+.statLabel {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; // Fix: Add gap between buttons
+    margin-bottom: 3rem;
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+// Content Section (Tabs & Lists)
+.contentSection {
+    margin-top: 2rem;
+}
+
+.tabs {
+    display: flex;
+    gap: 1.5rem;
+    border-bottom: 2px solid $color-neutral-200;
+    margin-bottom: 2rem;
+}
+
+.tab {
+    padding: 0.75rem 0.5rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s;
+
+    &:hover {
+        color: var(--color-text-primary);
+    }
+
+    &.active {
+        color: $color-primary-600;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $color-primary-600;
+        }
+    }
+}
+
+.reviewList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reviewCard {
+    padding: 1.5rem;
+    border: 1px solid $color-neutral-200;
+    border-radius: $radius-lg;
+    background: white;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+}
+
+.reviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+
+    h4 {
+        margin: 0;
+        color: var(--color-text-primary);
+        font-weight: 600;
+    }
+
+    span {
+        font-size: 0.85rem;
+        color: var(--color-text-secondary);
+    }
+}
+
+.reviewContent {
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.reviewFooter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #f59e0b;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 3rem;
+    color: var(--color-text-secondary);
+    background: #f9fafb;
+    border-radius: $radius-lg;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.2s ease-out;
+}
+
+.modalContent {
+    background: white;
+    padding: 2rem;
+    border-radius: $radius-lg;
+    width: 90%;
+    max-width: 400px;
+
+    h2 {
+        margin-bottom: 1.5rem;
+        color: var(--color-text-primary);
+        text-align: center;
+    }
+}
+
+.filterContainer {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+
+    // Custom scrollbar for better UX
+    scrollbar-width: thin;
+    scrollbar-color: rgba($color-primary-500, 0.3) transparent;
+
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba($color-primary-500, 0.3);
+        border-radius: 3px;
+
+        &:hover {
+            background: rgba($color-primary-500, 0.5);
+        }
+    }
+}
+
+.filterChip {
+    padding: 0.65rem 1.25rem;
+    border-radius: 999px;
+    background: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+
+    // Fix for text alignment and size
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: max-content;
+
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-color: rgba($color-primary-500, 0.3);
+    }
+
+    // Dark mode glow effect
+    [data-theme="dark"] & {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3),
+            0 0 20px rgba($color-primary-500, 0.1);
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4),
+                0 0 30px rgba($color-primary-500, 0.2);
+        }
+    }
+}
+
+.activeChip {
+    background: linear-gradient(135deg, $color-primary-500 0%, $color-primary-600 100%);
+    color: #1a1410;
+    font-weight: 700;
+    border-color: $color-primary-400;
+    box-shadow: 0 4px 16px rgba($color-primary-500, 0.4);
+
+    &:hover {
+        background: linear-gradient(135deg, $color-primary-600 0%, $color-primary-700 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba($color-primary-500, 0.5);
+    }
+
+    // Dark mode active glow
+    [data-theme="dark"] & {
+        box-shadow: 0 4px 16px rgba($color-primary-500, 0.5),
+            0 0 40px rgba($color-primary-500, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+        &:hover {
+            box-shadow: 0 6px 20px rgba($color-primary-500, 0.6),
+                0 0 50px rgba($color-primary-500, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+.reviewSubHeader {
+    margin-top: -0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.categoryTag {
+    font-size: 0.75rem;
+    background: $color-primary-50;
+    color: $color-primary-700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--color-text-secondary);
+        font-weight: 500;
+    }
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid $color-neutral-300;
+    border-radius: $radius-md;
+    font-size: 1rem;
+    transition: all 0.2s;
+
+    &:focus {
+        border-color: $color-primary-500;
+        outline: none;
+        box-shadow: 0 0 0 3px $color-primary-100;
+    }
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.iconBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    color: var(--color-text-secondary);
+    transition: all 0.2s;
+
+    &:hover {
+        background: $color-neutral-200;
+        color: var(--color-text-primary);
+    }
+}
+
+.editForm {
+    margin-bottom: 1rem;
+}
+
+.editText {
+    width: 100%;
+    min-height: 80px;
+    padding: 0.75rem;
+    border: 1px solid $color-neutral-200;
+    border-radius: $radius-md;
+    font-family: inherit;
+    resize: vertical;
+    margin-bottom: 0.5rem;
+
+    &:focus {
+        outline: none;
+        border-color: $color-primary-500;
+        box-shadow: 0 0 0 2px rgba($color-primary-500, 0.1);
+    }
+}
+
+// Dark Mode Overrides
+:global([data-theme='dark']) {
+    .profile {
+        h1 {
+            color: $color-neutral-100;
+        }
+    }
+
+    .profileCard,
+    .statCard,
+    .reviewCard,
+    .modalContent {
+        background: $color-neutral-800; // or a specific dark card color
+        border-color: var(--color-text-secondary);
+
+        // Ensure text inside is light
+        h2,
+        h4,
+        .statValue {
+            color: $color-neutral-100;
+        }
+
+        p,
+        span,
+        .reviewContent,
+        .statLabel {
+            color: $color-neutral-300;
+        }
+    }
+
+    .infoItem {
+        color: #fef3e2; // Cream white for email visibility
+
+        svg {
+            color: #d6d3d1; // Stone-300 for icons
+        }
+    }
+
+    .tabs {
+        border-bottom-color: var(--color-text-secondary);
+    }
+
+    .tab {
+        color: $color-neutral-400;
+
+        &:hover {
+            color: $color-neutral-200;
+        }
+
+        &.active {
+            color: $color-primary-400;
+        }
+
+        &.active::after {
+            background: $color-primary-400;
+        }
+    }
+
+    .filterChip {
+        background: $color-neutral-700;
+        color: $color-neutral-300;
+
+        &:hover {
+            background: $color-neutral-600;
+        }
+    }
+
+    .activeChip {
+        background: $color-primary-600;
+        color: white;
+
+        &:hover {
+            background: $color-primary-500;
+        }
+    }
+
+    .emptyState {
+        background: $color-neutral-800;
+        color: $color-neutral-400;
+    }
+
+    .iconBtn {
+        color: $color-neutral-400;
+
+        &:hover {
+            background: $color-neutral-700;
+            color: $color-neutral-200;
+        }
+    }
+
+    .input,
+    .editText {
+        background: $color-neutral-900;
+        border-color: var(--color-text-secondary);
+        color: $color-neutral-100;
+
+        &:focus {
+            border-color: $color-primary-500;
+        }
+    }
+
+    // Form labels
+    .formGroup label {
+        color: $color-neutral-300;
+    }
+
+    // Review sub-headers
+    .reviewHeader span {
+        color: var(--color-text-secondary);
+    }
+
+    // Category tags
+    .categoryTag {
+        background: rgba($color-primary-900, 0.5);
+        color: $color-primary-300;
+    }
+}
