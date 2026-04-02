@@ -19,6 +19,7 @@ Designed for managing books, categories, users, and reviews with an admin dashbo
 - 🔄 **API integration with Axios**
 - 🧠 **Redux Toolkit for state management**
 - 🎞 **Smooth animations with Framer Motion**
+- Need fix the backend payement soon 
 
 ---
 
