@@ -44,7 +44,7 @@ Designed for managing books, categories, users, and reviews with an admin dashbo
 ```txt
 src/
 ├── context/        # React contexts (Toast, etc.)
-├── hooks/          # Custom hooks
+├── hooks/          # Custom hooks 
 ├── i18n.ts         # i18n configuration
 ├── locales/        # Translations (en, ar, fr, ...)
 ├── pages/          # App pages (Admin, Books, Login, Profile...)
@@ -53,3 +53,5 @@ src/
 ├── types/          # TypeScript types
 ├── utils/          # Utility helpers
 └── main.tsx        # App entry point
+
+made with love
