@@ -54,4 +54,4 @@ src/
 ├── utils/          # Utility helpers
 └── main.tsx        # App entry point
 
-made with love
+made with love by Marwan M.
