@@ -1,4 +1,5 @@
-# 📚 Home Library – Frontend
+# 📚 Home Library – Frontend  
+#Need fix the databse server free
 
 A modern, multilingual **Home Library frontend application** built with **React, TypeScript, and Vite**.  
 Designed for managing books, categories, users, and reviews with an admin dashboard and clean UI.
